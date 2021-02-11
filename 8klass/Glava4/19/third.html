@@ -1,0 +1,191 @@
+<html>
+<head>
+<title> second </title>
+<style>
+li { color: #e36d51;
+ }
+ li span {
+   color:  #404040;
+ }
+.stroke {color:#404040;
+  text-shadow: #e36d51 0 0 2px;}
+a {text-decoration: none;
+color: #404040;
+}
+a:hover {
+  color: #e36d51 ;}
+b{text-decoration: none;
+color: #404040;}
+b:hover { color: #e36d51 }
+.font { color :#404040;
+  font-size:30px;
+  font-family: Roboto;
+}
+#vo {
+    color:green;
+}
+#nvo {
+    color:red;
+  }
+</style>
+</head>
+  <BODY bgcolor = "#f9fafc"  class = "font" >
+  <p align = "center"  class= "stroke" ><font size = 7 face = "Roboto"> Числа в памяти компьютера </font></p>
+  <table bgcolor = "#ccf7f0" border="0" rules="none" align="center" width = "100%" cellpadding="10" height = "40">
+
+    <tr>
+
+          <td> <a href="main.html"> <font size = "6" face = "Roboto">Главная</font></a></td>
+          <td><a href="index.html"><font size = "6" face = "Roboto">Курсы</font></a></td>
+          <td><a href="index.html"><font size = "6" face = "Roboto">Статистика</font></a></td>
+          <td><a href="index.html"><font size = "6" face = "Roboto">Войти</font></a></td>
+            <td><a href="index.html"><font size = "6" face = "Roboto">Регистрация</font></a></td>
+
+    </tr>
+  </table>
+  <p><font  size = "6" face = "Roboto" color = "#404040"> <strong> Основные темы параграфа:</strong></font></p>
+ <ul>
+   <li><font  size = "6" face = "Roboto"><span> Представление целых чисел</span></font> </li>
+   <li> <font  size = "6" face = "Roboto"><span> Размер ячейки и диапазон значений числа </span></font></li>
+      <li> <font  size = "6" face = "Roboto"><span> Особенности работы компьютера с целыми числами </span></font></li>
+         <li> <font  size = "6" face = "Roboto"><span> Представление вещественных чисел </span></font></li>
+            <li> <font  size = "6" face = "Roboto"><span> Особенности работы компьютера с вещественными числами </span></font></li>
+            </ul>
+             <p align = "center" class = "font"><strong>Представление целых чисел</strong></p>
+             <p > Часть памяти, в которой хранится одно число, будем называть ячейкой. Минимальный размер ячейки, в которой может храниться целое число, — 8 битов, или 1 байт. Получим представление десятичного числа 25 в такой ячейке. Для этого нужно перевести число в двоичную систему счисления.</p>
+             <p align = "center"><font color ="#e36d51"> 25<sub>10</sub> = 11001<sub>2</sub>.</font></p>
+               <p > Теперь осталось «вписать» его в восьмиразрядную ячейку</p>
+               <p align ="center"> <font color ="#e36d51">00011001.</font></p>
+               <p> Число записывается «прижатым» к правому краю ячейки (в младших разрядах). Оставшиеся слева разряды (старшие) заполняются нулями.</p>
+               <p> Самый старший разряд — первый слева — хранит знак числа. Если число положительное, то в этом разряде ноль, если отрицательное — единица.</p>
+               <p> Максимальное целое положительное число, помещающееся в 8-разрядную ячейку, равно <font color ="#e36d51">127</font>.</p>
+
+
+
+
+               <p><strong>Для представления <font color ="#e36d51"> отрицательных целых чисел</font> используется дополнительный код.</strong></p>
+
+              <p> <i>Получить дополнительный код некоторого отрицательного числа -X можно по следующему алгоритму:</i></p>
+
+              <p><font color ="#e36d51"> 1) </font>Записать внутреннее представление соответствующего ему положительного числа +Х — это мы уже умеем;</p>
+            <p>  <font color ="#e36d51"> 2)</font> Записать обратный код полученного числа заменой во всех разрядах 0 на 1 и 1 на 0;</p>
+              <p> <font color ="#e36d51">3)</font> К полученному числу прибавить 1.</p>
+
+            <p>  <strong>Определим по этим правилам внутреннее представление числа <font color ="#e36d51">-25<sub>10</sub> </font>в восьмиразрядной ячейке:</strong></p>
+
+
+<p><font color ="#e36d51">1)</font> 00011001</p>
+<p><font color ="#e36d51">2)</font> 11100110</p>
+<p><font color ="#e36d51">3)</font> +1
+<p> <strong><font color ="#e36d51">11100111<sub>2</sub></font></strong> — это и есть представление числа <font color ="#e36d51">-25<sub>10</sub></font>.
+  <p align ="center" class = "font"><strong>Размер ячейки и диапазон значений числа</strong></p>
+<p>Наибольшее по модулю отрицательное значение в восьмиразрядной ячейке равно -128. Его внутреннее представление: 10000000. Таким образом, диапазон представления целых чисел в восьмиразрядной ячейке следующий:</p>
+<p align = "center"> -128 ≤ X ≤ 127 или -2<sup>7</sup> ≤ X ≤ 2<sup>7</sup> - 1.
+  <p> Восьмиразрядное представление целых чисел обеспечивает слишком узкий диапазон значений. Если требуется больший диапазон, нужно использовать ячейки большего размера. Для 16-разрядной ячейки диапазон значений будет следующим:</p>
+<p align = "center"> -2<sup>15</sup> ≤ X ≤ 2<sup>15</sup> - 1 или -32 768 ≤ X ≤ 32 767.</p>
+<p> Теперь становится очевидной обобщенная формула для диапазона целых чисел в зависимости от разрядности N ячейки:</p>
+<p align ="center"> -2<sup>N-1</sup> ≤ Х ≤ 2<sup>N-1</sup> - 1.</p>
+<p align = "center"><strong>Особенности работы компьютера с целыми числами</strong></p>
+<p> Выполняя на компьютере вычисления с целыми числами, нужно помнить об ограниченности допустимых значений.</p>
+<p> Выход результатов вычислений за границы допустимого диапазона называется переполнением. Переполнение при вычислениях с целыми числами не вызывает прерывания работы процессора. Машина продолжает считать, но результаты могут оказаться неправильными.</P>
+<p align = "center"><strong>Представление вещественных чисел</strong></p>
+<p>Целые и дробные числа в совокупности называются вещественными числами. В математике также используется термин «действительные числа».</p>
+<p>Всякое вещественное число <font color ="#e36d51">X</font> можно записать в виде произведения мантиссы <font color ="#e36d51">m</font> и основания системы счисления в некоторой целой степени <font color ="#e36d51">n</font>, которую называют порядком:</p>
+<p align = "center"> X = m • р<sup>n</sup>.
+<p>Например, число 25,324 можно записать в таком виде: 0,25324 • 10<sup>2</sup>. Здесь <font color ="#e36d51">m</font> = 0,25324 — мантисса, <font color ="#e36d51">n</font> = 2 — порядок. Порядок указывает, на какое количество позиций и в каком направлении должна сместиться десятичная запятая в мантиссе.</p>
+<p>Чаще всего для хранения вещественных чисел в памяти компьютера используется либо 32-разрядная, либо 64-разрядная ячейка. Первый вариант называется представлением с обычной точностью, второй — представлением с удвоенной точностью. В ячейке хранятся два числа в двоичной системе счисления: мантисса и порядок.</p>
+<p align = "center"><strong> Особенности работы компьютера с вещественными числами</strong></p>
+<p><font color ="#e36d51">1.</font> Диапазон вещественных чисел ограничен. Но он значительно шире диапазона целых чисел в рассмотренном ранее способе и х представления. Например, при использовании 32-разрядной ячейки этот диапазон следующий:
+<p align ="center">-3,4 • 10<sup>38</sup> ≤ X ≤ 3,4 • 10<sup>38</sup>.
+<p><font color ="#e36d51">2.</font> Выход за диапазон (переполнение) — аварийная ситуация для процессора, который прерывает свою работу.</p>
+<p><font color ="#e36d51">3.</font> Результаты машинных вычислений о вещественными числами содержат погрешность. При использовании удвоенной точности эта погрешность уменьшается.</p>
+<p align = "center"><strong><font color ="#e36d51" size = "8">Вопросы и задания</font></strong></p>
+<p><font color ="#e36d51">1.</font> Как в памяти компьютера представляются целые положительные и отрицательные числа?</p>
+<p><font color ="#e36d51">2.</font> Укажите, каков был бы диапазон значений целых чисел, если бы для их хранения использовалась четырехразрядная ячейка.</p>
+<p><font color ="#e36d51">3.</font> Запишите внутреннее представление следующих десятичных чисел, используя восьмиразрядную ячейку:</p>
+<ul>
+  <li><span>32  <input class = "font" type="text" id="z_1"></span></li>
+  <li><span>-32  <input class = "font" type="text" id="z_2"></span></li>
+  <li><span>102  <input  class = "font"type="text" id="z_3"></span> </li>
+  <li><span>-102  <input  class = "font"type="text" id="z_4"></span> </li>
+  <li><span>126  <input  class = "font"type="text" id="z_5"></span></li>
+  <li><span>-126  <input  class = "font"type="text" id="z_6"></span></li>
+</ul>
+<button onclick="proverit();">Проверить</button>
+<div id="rezultat"></div>
+<script>
+function proverit(){
+pr_otv_zadachi_1 = 00100000;
+pr_otv_zadachi_2 = 11100000;
+pr_otv_zadachi_3 = 01100110;
+pr_otv_zadachi_4 = 10011010;
+pr_otv_zadachi_5 = 01111110;
+pr_otv_zadachi_6 = 10000010;
+otv_uch_1 = document.getElementById('z_1').value;
+otv_uch_2 = document.getElementById('z_2').value;
+otv_uch_3 = document.getElementById('z_3').value;
+otv_uch_4 = document.getElementById('z_4').value;
+otv_uch_5 = document.getElementById('z_5').value;
+otv_uch_6 = document.getElementById('z_6').value;
+ball = 0;
+if(otv_uch_1 == pr_otv_zadachi_1){
+ball +=1;
+}
+if(otv_uch_2 == pr_otv_zadachi_2){
+ball +=1;
+}
+if(otv_uch_3 == pr_otv_zadachi_3){
+ball +=1;
+}
+ball = 0;
+if(otv_uch_4 == pr_otv_zadachi_4){
+ball +=1;
+}
+if(otv_uch_5 == pr_otv_zadachi_5){
+ball +=1;
+}
+if(otv_uch_6 == pr_otv_zadachi_6){
+ball +=1;
+}
+vsego_zadach = 6;
+procent_vip = ball/vsego_zadach * 100;
+document.getElementById('rezultat').innerHTML = "Задания выполнены верно на "+procent_vip+"%.";
+}
+</script>
+<p><font color ="#e36d51">4.</font> Определите, каким десятичным числам соответствуют следующие двоичные коды восьмиразрядного представления целых чисел.</p>
+<p>а) 00010101;  <input class = "font" type="text" id="z_7"></p>
+<p>6) 11111110; <input class = "font"type="text" id="z_8"></p>
+<p>в) 00111111;  <input class = "font"type="text" id="z_9"></p>
+<p>г) 10101010. <input class = "font"type="text" id="z_10"></p>
+<button onClick="proverit();">Проверить</button>
+<div id="rezult"></div>
+<script>
+function proverit(){
+pr_otv_zadachi_7 = 21;
+pr_otv_zadachi_8 = 254;
+pr_otv_zadachi_9 = 63;
+pr_otv_zadachi_10 = 170;
+otv_uch_7 = document.getElementById('z_7').value;
+otv_uch_8 = document.getElementById('z_8').value;
+otv_uch_9 = document.getElementById('z_9').value;
+otv_uch_10 = document.getElementById('z_10').value;
+ball = 0;
+if(otv_uch_7 == pr_otv_zadachi_7){
+ball +=1;
+}
+if(otv_uch_8 == pr_otv_zadachi_8){
+ball +=1;
+}
+if(otv_uch_9 == pr_otv_zadachi_9){
+ball +=1;
+}
+if(otv_uch_10 == pr_otv_zadachi_10){
+ball +=1;
+}
+vsego_zadach = 4;
+procent_vip = ball/vsego_zadach * 100;
+document.getElementById('rezult').innerHTML = "Задания выполнены верно на "+procent_vip+"%.";
+}
+</script>
+</body>
+</html>
