@@ -1,0 +1,262 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Simple Multiple Choice Quiz with JavaScript</title>
+</head>
+
+<body>
+
+<h1>Вопросы и задания к §23  </h1>
+
+<section class="main">
+
+<form name="quiz" action="javascript:check();" class="quizform">
+
+<div class="quizsection">
+
+
+	<h2>Когда были изобретены счетно-перфорационные машины?</h2>
+	
+	<div class="answer">
+		<input name="q1" value="value1" id="value1" type="radio" checked="checked" /> конец 18 века
+	</div>
+
+	<div class="answer">
+		<input name="q1" value="value1" id="value2" type="radio" /> начало 19 века
+	</div>
+
+	<div class="answer">
+		<input name="q1" value="value2" id="value3" type="radio" /> конец 19 века
+	</div>
+
+	<div class="answer">
+		<input name="q1" value="value1" id="value4" type="radio" /> начало 20 века
+	</div>
+
+
+</div>
+
+<div class="quizsection">
+
+	<h2>Кем были изобретены счетно-перфорационные машины?</h2>
+
+	<div class="answer">
+		<input name="q2" value="value1" id="value1" type="radio" checked="checked" /> Эдисон
+	</div>
+
+	<div class="answer">
+		<input name="q2" value="value2" id="value2" type="radio" /> Холлерит
+	</div>
+
+	<div class="answer">
+		<input name="q2" value="value1" id="value3" type="radio" /> Энштейн
+	</div>
+
+	<div class="answer">
+		<input name="q2" value="value1" id="value4" type="radio" /> Тесла
+	</div>
+
+
+</div>
+
+<div class="quizsection">
+
+	<h2>Когда создавались релейные вычислительные машины?</h2>
+
+	<div class="answer">
+		<input name="q3" value="value1" id="value1" type="radio" checked="checked" /> 18 - 19 век
+	</div>
+
+	<div class="answer">
+		<input name="q3" value="value1" id="value2" type="radio" /> 19 век
+	</div>
+
+	<div class="answer">
+		<input name="q3" value="value2" id="value3" type="radio" /> 19 - 20 век
+	</div>
+
+	<div class="answer">
+		<input name="q3" value="value1" id="value4" type="radio" /> 20 век
+	</div>
+
+
+</div>
+
+<div class="quizsection">
+
+	<h2>ЭВМ первого поколения - это</h2>
+
+	<div class="answer">
+		<input name="q4" value="value2" id="value1" type="radio" checked="checked" /> ламповые машины 
+	</div>
+
+	<div class="answer">
+		<input name="q4" value="value1" id="value2" type="radio" /> полупроводниковые машины 
+	</div>
+
+	<div class="answer">
+		<input name="q4" value="value1" id="value3" type="radio" /> машины на интегральных схемах
+	</div>
+
+	<div class="answer">
+		<input name="q4" value="value1" id="value4" type="radio" />  Персональные компьютеры и суперкомпьютеры 
+	</div>
+
+
+</div>
+
+<div class="quizsection">
+
+	<h2>ЭВМ второго поколения  - это</h2>
+
+	<div class="answer">
+		<input name="q5" value="value1" id="value1" type="radio" checked="checked" /> ламповые машины 
+	</div>
+
+	<div class="answer">
+		<input name="q5" value="value2" id="value2" type="radio" /> полупроводниковые машины 
+	</div>
+
+	<div class="answer">
+		<input name="q5" value="value1" id="value3" type="radio" /> машины на интегральных схемах
+	</div>
+
+	<div class="answer">
+		<input name="q5" value="value1" id="value4" type="radio" />  Персональные компьютеры и суперкомпьютеры 
+	</div>
+
+
+</div>
+
+<div class="quizsection">
+
+	<h2>ЭВМ третьего  - это</h2>
+
+	<div class="answer">
+		<input name="q6" value="value1" id="value1" type="radio" checked="checked" /> ламповые машины 
+	</div>
+
+	<div class="answer">
+		<input name="q6" value="value1" id="value2" type="radio" /> полупроводниковые машины 
+	</div>
+
+	<div class="answer">
+		<input name="q6" value="value2" id="value3" type="radio" /> машины на интегральных схемах
+	</div>
+
+	<div class="answer">
+		<input name="q6" value="value1" id="value4" type="radio" />  Персональные компьютеры и суперкомпьютеры 
+	</div>
+
+
+</div>
+<input value="Submit" type="submit" /> <input value="Reset" type="reset" />
+
+</form>
+
+</section>
+
+<script type="text/javascript">// <![CDATA[
+
+   var result;
+   
+   function check()
+
+   {
+
+      var question;
+      var value1;
+      var value2;
+      
+      
+      question = 1;
+      value1 = 0;
+      value2 = 0;
+      
+      
+      result = "";
+
+      var choice;
+      
+      for (question = 1; question <=6; question++) {
+      
+         var q = document.forms['quiz'].elements['q'+question];
+
+            for (var i = 0; i < q.length; i++) {
+               if (q[i].checked) {
+                  choice = q[i].value;
+               }
+            }
+
+            if (choice == "value1") {
+               value1++;
+            }
+
+            if (choice == "value2") {
+               value2++;
+            }
+
+
+         }
+
+      if (value2 == 0) {
+
+         // Нет правильных ответов
+         result = "ocenka2";
+
+      }
+
+      else if (value2 == 1) {
+
+         // Один правильный ответ
+         result = "ocenka3";
+
+      }
+
+      else if (value2 == 2) {
+
+         // Два правильных ответа
+         result = "ocenka4";
+
+      }
+
+      else if (value2 == 3) {
+
+         // Три правильных ответа
+         result = "ocenka5";
+
+      }
+      else if (value2 == 4) {
+
+         // Три правильных ответа
+         result = "ocenka13";
+
+      }
+      else if (value2 == 5) {
+
+         // Три правильных ответа
+         result = "ocenka14";
+
+      }
+      else if (value2 == 6) {
+
+         // Три правильных ответа
+         result = "ocenka15";
+
+      }
+
+      else {
+         result = "404";
+      }
+
+      window.location = result + '.html';
+
+   }
+
+// ]]></script>
+
+</body>
+</html>
+
