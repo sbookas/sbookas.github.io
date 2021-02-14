@@ -1,0 +1,120 @@
+<html>
+    <head>
+        <title>Тест</title></head>
+        <style type = "text/css">
+            div.questionBlock {
+                display: none;
+            }
+        </style>
+        <script type = "text/javascript">
+            var answer;
+        </script>
+    </head>
+    <body background="tz13.jpg"><h1>Тест по теме: "Алгоритм Евклида"</h1>
+        <div class = "questionBlock">
+           1. Что позволяет вычислить алгоритм Евклида?<br>
+            <input type = "radio" name=q1 onclick="qa.nowRight = 0">среднее арифметическое двух чисел<br>
+            <input type = "radio" name=q1 onclick="qa.nowRight = 1">наибольший общий делитель<br>
+            <input type = "radio" name=q1 onclick="qa.nowRight = 0">производную числа<br>
+            <input type = "radio" name=q1 onclick="qa.nowRight = 0">остаток от деления двух чисел<br> 
+           
+        </div>
+        <div class = "questionBlock">
+            2. В чем заключается идея алгоритма Евклида?<br>
+            <input type = "radio" name=q2 onclick="qa.nowRight = 1">если M>N, то НОД(М, N) = НОД(М - N, N)<br>
+            <input type = "radio" name=q2 onclick="qa.nowRight = 0">если M>N, то НОД(М, N) = НОД(М + N, N)<br>
+            <input type = "radio" name=q2 onclick="qa.nowRight = 0">если M>N, то НОД(М, N) = НОД(N - M, N)<br>
+            <input type = "radio" name=q2 onclick="qa.nowRight = 0">если M<N, то НОД(М, N) = НОД(М - N, N)<br>
+         
+        </div>
+        <div class = "questionBlock">
+            3. Определите НОД двух чисел 24 и 36, используя алгоритм Евклида. Результат будет равен?<br>
+            <input type = "radio" name=q3 onclick="qa.nowRight = 1">12<br>
+            <input type = "radio" name=q3 onclick="qa.nowRight = 0">24<br>
+            <input type = "radio" name=q3 onclick="qa.nowRight = 0">36<br>
+            <input type = "radio" name=q3 onclick="qa.nowRight = 0">72<br>
+        
+        </div>
+        <div class = "questionBlock">
+            4.Определите НОД двух чисел 24 и 32, используя алгоритм Евклида. Результат будет равен?<br>
+            <input type = "radio" name=q4 onclick="qa.nowRight = 0">1<br>
+            <input type = "radio" name=q4 onclick="qa.nowRight = 0">56<br>
+            <input type = "radio" name=q4 onclick="qa.nowRight = 0">4<br>
+            <input type = "radio" name=q4 onclick="qa.nowRight = 1">8<br>
+          
+        </div>
+        <div class = "questionBlock">
+            5. Какая cтруктура алгоритма?<br>
+            <input type = "radio" name=q4 onclick="qa.nowRight = 1">цикл-пока с вложенным ветвлением<br>
+            <input type = "radio" name=q4 onclick="qa.nowRight = 0">цикл cо счётчиком<br>
+            <input type = "radio" name=q4 onclick="qa.nowRight = 0">цикл с выходом из середины<br>
+          
+        </div>
+        <div class = "questionBlock">
+            6. Чему будет равно значение переменной А при X=34 и Y=56 в результате выполнения условного оператора: if X>Y then А:=X-Y else А:=Y–X?<br>
+            <input type = "radio" name=q2 onclick="qa.nowRight = 0">2<br>
+            <input type = "radio" name=q2 onclick="qa.nowRight = 0">12<br>
+            <input type = "radio" name=q2 onclick="qa.nowRight = 1">22<br>
+            <input type = "radio" name=q2 onclick="qa.nowRight = 0">952<br>
+            
+        </div>
+        <div class = "questionBlock">
+            7. Результат выполнения фрагмента программы: while XY do if X>Y then X:=X-Y else Y:=Y–X при X=34 и Y=56 будет равен?<br>
+            <input type = "radio" name=q2 onclick="qa.nowRight = 1">2<br>
+            <input type = "radio" name=q2 onclick="qa.nowRight = 0">12<br>
+            <input type = "radio" name=q2 onclick="qa.nowRight = 0">22<br>
+            <input type = "radio" name=q2 onclick="qa.nowRight = 0">952<br>
+        </div>
+        <div class = "questionBlock">
+            8. Определите НОД двух чисел 196 и 512, используя алгоритм Евклида. Результат будет равен?<br>
+            <input type = "radio" name=q2 onclick="qa.nowRight = 1">4<br>
+            <input type = "radio" name=q2 onclick="qa.nowRight = 0">3<br>
+            <input type = "radio" name=q2 onclick="qa.nowRight = 0">14<br>
+        </div>
+        <div class = "questionBlock">
+            9. Определите НОД двух чисел 125 и 225, используя алгоритм Евклида. Результат будет равен?<br>
+            <input type = "radio" name=q2 onclick="qa.nowRight = 1">25<br>
+            <input type = "radio" name=q2 onclick="qa.nowRight = 0">15<br>
+            <input type = "radio" name=q2 onclick="qa.nowRight = 0">5<br>
+            <input type = "radio" name=q2 onclick="qa.nowRight = 0">125<br>
+        </div>
+        <div class = "questionBlock">
+            10. Определите НОД двух чисел 234 и 696, используя алгоритм Евклида. Результат будет равен?<br>
+            <input type = "radio" name=q2 onclick="qa.nowRight = 0">12<br>
+            <input type = "radio" name=q2 onclick="qa.nowRight = 1">6<br>
+            <input type = "radio" name=q2 onclick="qa.nowRight = 0">3<br>
+            <input type = "radio" name=q2 onclick="qa.nowRight = 0">2<br>
+        </div>
+        <input type="button" value="Ответить"  onclick="qa.nextOrResult()"> 
+        <script type = "text/javascript">
+            var qa = new QuestAnalizer();
+            function QuestAnalizer() {
+                var now = 0, printed = false, rightCount = 0;
+                var questionBlocks = document.querySelectorAll("div.questionBlock");
+                var allQCount = questionBlocks.length;
+                this.nowRight = 0;
+                questionBlocks[now].style.display = "block";
+                this.nextOrResult = function () {
+                    if (now >= allQCount-1) {
+                        now++;
+                        if (!printed) {
+                            questionBlocks[now - 1].style.display = "none"
+                            var p = document.createElement("p");
+                            p.innerHTML = "Верных ответов " + rightCount + ". Вы набрали " + (rightCount / allQCount * 100).toFixed(0) + "%";
+                            document.body.appendChild(p);
+                            printed = true;
+                        } else {
+                            alert("Ваш результат на экране.");
+                        }
+                    } else {
+                        questionBlocks[now].style.display = "none";
+                        now++;
+                        rightCount += this.nowRight;
+                        questionBlocks[now].style.display = "block";
+                    }
+                }
+            }
+            
+        </script>
+    </body>
+</html>
