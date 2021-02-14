@@ -1,0 +1,173 @@
+<html>
+    <head>
+        <title>Тест</title></head>
+        <style type = "text/css">
+            div.questionBlock {
+                display: none;
+            }
+        </style>
+        <script type = "text/javascript">
+            var answer;
+        </script>
+    </head>
+    <body background="tz13.jpg"><h1>Тест по теме: "Массивы на Паскале"</h1>
+        <div class = "questionBlock">
+           1. Где представлено правильное описание массива?<br>
+            <input type = "radio" name=q1 onclick="qa.nowRight = 0">var a: array [1-100] of integer<br>
+            <input type = "radio" name=q1 onclick="qa.nowRight = 0">var a: array [1:100] of integer<br>
+            <input type = "radio" name=q1 onclick="qa.nowRight = 1">var a:array[1..100] of integer<br>
+            <input type = "radio" name=q1 onclick="qa.nowRight = 0">var a:[1..100]<br> 	
+           
+        </div>
+        <div class = "questionBlock">
+            2. Указан фрагмент программы: const b: array [1..5] of integer = (4, 2, 3, 5, 7). Какое значение имеет элемент массива b[4]?<br>
+            <input type = "radio" name=q2 onclick="qa.nowRight = 1">5<br>
+            <input type = "radio" name=q2 onclick="qa.nowRight = 0">3<br>
+            <input type = "radio" name=q2 onclick="qa.nowRight = 0">7<br>
+            <input type = "radio" name=q2 onclick="qa.nowRight = 0">4<br>
+                    
+        </div>
+        <div class = "questionBlock">
+            3. Какой опратор используется для заполнения массива путем ввода чисел с клавиатуры в Паскале?<br>
+            <input type = "radio" name=q3 onclick="qa.nowRight = 0">for i:=1 to 10 do<br>
+            <input type = "radio" name=q3 onclick="qa.nowRight = 0">var а: array [1..5] of real<br>
+            <input type = "radio" name=q3 onclick="qa.nowRight = 1">readln<br>
+            <input type = "radio" name=q3 onclick="qa.nowRight = 0">writeln<br>
+        
+        </div>
+        <div class = "questionBlock">
+            4. Какой опрератор используется для печати массива в окне результатов в Паскале?<br>
+            <input type = "radio" name=q4 onclick="qa.nowRight = 0">D: array [1..5] of integer<br>
+            <input type = "radio" name=q4 onclick="qa.nowRight = 0">readln (a[i])<br>
+            <input type = "radio" name=q4 onclick="qa.nowRight = 0">for i:=1 to 10 do<br>
+            <input type = "radio" name=q4 onclick="qa.nowRight = 1">writeln(‘a[‘,i,’]=’,a[i])<br>
+          
+        </div>
+        <div class = "questionBlock">
+            5. В таблице хранятся данные о количестве проданных единиц товаров (Dat[1] — проданных товаров первого типа, Dat[2] — второго и т.д.). Определите, что будет напечатано в результате выполнения программы:<br>
+Program mas5;<br>
+
+Var k, m: integer;<br>
+
+Dat: array[1..11] of integer; <br>
+
+Begin <br>
+
+Dat[1]:= 20; Dat[2]:= 25; <br>
+
+Dat[3]:= 19; Dat[4]:= 25; <br> 
+
+Dat[5]:= 26; Dat[6]:= 22; <br>
+
+Dat[7]:= 24; Dat[8]:= 28; <br>
+
+Dat[9]:= 26; Dat[10]:= 21; <br>
+
+Dat[11]:= 27; <br>
+
+m := 0; <br>
+
+for k := 3 to 11 do <br>
+
+if Dat[k] >= 22 then <br>
+
+begin <br>
+
+m := m+1; <br>
+
+end; <br>
+
+writeln(m); <br>
+
+End. <br>
+            <input type = "radio" name=q4 onclick="qa.nowRight = 1">7<br>
+            <input type = "radio" name=q4 onclick="qa.nowRight = 0">24<br>
+            <input type = "radio" name=q4 onclick="qa.nowRight = 0">11<br>
+            <input type = "radio" name=q4 onclick="qa.nowRight = 0">1<br>
+          
+        </div>
+        <div class = "questionBlock">
+            6. Какие значения примут элементы массива A[3] и A[4] после выполнения последовательности операторов, если первоначально <br>
+A[3] := 5;<br>
+A[4] := 6;<br>
+A[3] = A[4];<br>
+A[4] := A[3]?<br>
+            <input type = "radio" name=q2 onclick="qa.nowRight = 1">A[3] = 6; A[4] = 6<br>
+            <input type = "radio" name=q2 onclick="qa.nowRight = 0">A[3] = 6; A[4] = 5<br>
+            <input type = "radio" name=q2 onclick="qa.nowRight = 0">A[3] = 5; A[4] = 6<br>
+            <input type = "radio" name=q2 onclick="qa.nowRight = 0">A[3] = 2; A[4] = 3<br>
+            
+        </div>
+        <div class = "questionBlock">
+            7.Что выполняет следующий фрагмент программы: <br>
+For i:=1 to N do <br> 
+write (a[ i ], ‘ ’)?;<br>
+            <input type = "radio" name=q2 onclick="qa.nowRight = 0">производит ввод N элементов в массив<br>
+            <input type = "radio" name=q2 onclick="qa.nowRight = 0">выполняет проверку значений элементов массива<br>
+            <input type = "radio" name=q2 onclick="qa.nowRight = 0">выводит N значений массива на экран в столбик<br>
+            <input type = "radio" name=q2 onclick="qa.nowRight = 1">выводит N значений массива на экран в строчку<br>                                                     
+            
+        </div>
+        <div class = "questionBlock">
+            8. Что выполняет следующий фрагмент программы: <br>
+Min:=a[1];<br>
+For i:=1 to N do <br>
+if a[i]< min then <br>
+min:=a[i]; <br>
+Writeln(min);?<br>
+            <input type = "radio" name=q2 onclick="qa.nowRight = 1">находит значение минимального  элемента  массива<br>
+            <input type = "radio" name=q2 onclick="qa.nowRight = 0">делает значения элементов  массива  минимальными<br>
+            <input type = "radio" name=q2 onclick="qa.nowRight = 0">находит индекс минимального элемента массива<br>
+            <input type = "radio" name=q2 onclick="qa.nowRight = 0">сравнивает первый элемент массива с минимальным элементом<br>
+        </div>
+        <div class = "questionBlock">
+            9. С помощью какой записи возможно вычисление суммы элементов массива?<br>
+            <input type = "radio" name=q2 onclick="qa.nowRight = 0">summ:=summ+i<br>
+            <input type = "radio" name=q2 onclick="qa.nowRight = 1">summ:=summ+Mass[i]<br>
+            <input type = "radio" name=q2 onclick="qa.nowRight = 0">summ:=Mass+Mass[i]<br>
+            <input type = "radio" name=q2 onclick="qa.nowRight = 0">summ:=summ[i]+mass[i]<br>
+        </div>
+        <div class = "questionBlock">
+            10. Что выполняет фрагмент программы: <br>
+t:=a[n]; <br>
+for i:=n?1 downto 1 do <br>
+a[i]:=a[i+1]; <br>
+a[1]:=t;?<br>
+            <input type = "radio" name=q2 onclick="qa.nowRight = 0">присваивает переменной t значение последнего элемента массива а<br>
+            <input type = "radio" name=q2 onclick="qa.nowRight = 0">сдвигает все элементы массива а вправо на одну позицию<br>
+            <input type = "radio" name=q2 onclick="qa.nowRight = 1">сдвигает все элементы массива а влево на одну позицию<br>
+            <input type = "radio" name=q2 onclick="qa.nowRight = 0">присваивает первому элементу массива а значение переменной t<br>
+        </div>
+        <input type="button" value="Ответить"  onclick="qa.nextOrResult()"> 
+        <script type = "text/javascript">
+            var qa = new QuestAnalizer();
+            function QuestAnalizer() {
+                var now = 0, printed = false, rightCount = 0;
+                var questionBlocks = document.querySelectorAll("div.questionBlock");
+                var allQCount = questionBlocks.length;
+                this.nowRight = 0;
+                questionBlocks[now].style.display = "block";
+                this.nextOrResult = function () {
+                    if (now >= allQCount-1) {
+                        now++;
+                        if (!printed) {
+                            questionBlocks[now - 1].style.display = "none"
+                            var p = document.createElement("p");
+                            p.innerHTML = "Верных ответов " + rightCount + ". Вы набрали " + (rightCount / allQCount * 100).toFixed(0) + "%";
+                            document.body.appendChild(p);
+                            printed = true;
+                        } else {
+                            alert("Ваш результат на экране.");
+                        }
+                    } else {
+                        questionBlocks[now].style.display = "none";
+                        now++;
+                        rightCount += this.nowRight;
+                        questionBlocks[now].style.display = "block";
+                    }
+                }
+            }
+            
+        </script>
+    </body>
+</html>
