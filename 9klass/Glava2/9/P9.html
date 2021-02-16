@@ -17,7 +17,7 @@
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">Компьютер-исполнитель работает с определенными </font><FONT SIZE="4"><b>данными</b></font><FONT SIZE="4"> по определенной программе. Данные — это множество величин.</font>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4"><b>Величины: константы и переменные</b></font>
 <P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">Компьютер работает с информацией, хранящейся в его памяти. Отдельный информационный объект (число, символ, строка, таблица и пр.) называется величиной.</font>
-<IMG SRC="sobaka3.PNG" ALIGN="LEFT"><BR><BR><BR><BR><br><br>
+<IMG SRC="sobaka3.png" ALIGN="LEFT"><BR><BR><BR><BR><br><br>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">Существуют</font><FONT SIZE="4"><i> три основных типа величин</i></font><FONT SIZE="4">, с которыми работает компьютер:</font><FONT SIZE="4"><b> числовой,</b></font><FONT SIZE="4"><b> символьный</b></font> и<FONT SIZE="4"><b> логический.</b></font><FONT SIZE="4"> Изучая базы данных и электронные таблицы, вы уже встречались с этими типами. В данной главе мы будем строить алгоритмы, работающие с числовыми величинами.</font>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">Числовые величины в программировании, так же как и математические величины, делятся на переменные и константы(постоянные). Например, в формуле (а² — 2ab + 5²) а, 6 — переменные, 2 — константа.</font>
 <P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4"><b>Константы</b></font><FONT SIZE="4"> записываются в алгоритмах своими десятичными значениями, например: 23, 3.5, 34. Значение константы хранится ввыделенной под нее ячейке памяти и остается неизменным втечение работы программы.</font>
@@ -39,15 +39,15 @@
 <p><p align="Center"><FONT SIZE="4">Z:=X+Y</font>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">Компьютер сначала вычисляет выражение, затем результат присваивает переменной, стоящей слева от знака «:=».
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">Если до выполнения этой команды содержимое ячеек, соответствующих переменным X, Y, Z, было таким:</font>
-<p align="Center"><IMG SRC="XY.PNG" ALIGN="Center"></P>
+<p align="Center"><IMG SRC="XY.png" ALIGN="Center"></P>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">то после выполнения команды оно станет следующим:</font>
-<p align="Center"><IMG SRC="YX.PNG" ALIGN="Center"></P>
+<p align="Center"><IMG SRC="YX.png" ALIGN="Center"></P>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">Прочерк в ячейке 2 обозначает, что начальное число в ней может быть любым. Оно не имеет значения для результата данной команды. Если слева от знака присваивания стоит числовая переменная, а справа — выражение, определяющее порядок вычисления числовой величины, то такую команду называют</font><FONT SIZE="4"><b> арифметической командой присваивания,</b></font><FONT SIZE="4"> а выражение —</font><FONT SIZE="4"><b> арифметическим выражением.</b></font>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">В частном случае арифметическое выражение в правой части оператора присваивания может быть представлено одной переменной или одной константой. Например:</font>
 <p align="Center"><FONT SIZE="4">X:=5</font><br>
 <FONT SIZE="4">Y:=X</font></p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4"><b>Команда ввода</b></font>
-<p><IMG SRC="infa.PNG" ALIGN="Center">
+<p><IMG SRC="infa.png" ALIGN="Center">
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<p align="Center"><FONT SIZE="4"><b>Команда ввода</b></font> <FONT SIZE="4">в описаниях алгоритмов выглядит так:</font><br>
 <FONT SIZE="4">ввод <список переменных>.</font></p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">Например:</font><br>
@@ -55,19 +55,19 @@
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">Пользователю удобно, если ввод данных организован в режиме диалога, когда по команде ввода компьютер прерывает выполнение программы и ждет действий пользователя. Пользователь должен набрать на клавиатуре вводимые значения переменных и нажать клавишу <ВВОД>. Введенные значения присвоятся соответствующим переменным из списка ввода, и выполнение программы продолжится.</font>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">Вот схема выполнения приведенной выше команды.</font><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">1. Память до выполнения команды:</font>
-<p align="Center"><IMG SRC="ABC.PNG" ALIGN="Center"></P>
+<p align="Center"><IMG SRC="ABC.png" ALIGN="Center"></P>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">2. Процессор компьютера получил команду</font><FONT SIZE="4"><i> ввод</i> А, В, С, прервал свою работу и ждет действий пользователя.</font>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">3. Пользователь набирает на клавиатуре:1 3 5</font>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">и нажимает клавишу <ВВОД>(«Enter»).</font>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">4. Память после выполнения команды:</font>
-<p align="Center"><IMG SRC="abc2.PNG" ALIGN="Center"></P>
+<p align="Center"><IMG SRC="abc2.png" ALIGN="Center"></P>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">5. Процессор переходит к выполнению следующей команды программы.</font><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">При выполнении пункта 3 вводимые числа должны быть отделены друг от друга какими-нибудь разделителями. Обычно это пробелы.</font><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">Из сказанного выше можно сделать вывод:</font>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<IMG SRC="sobaka.PNG" ALIGN="Center">
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<IMG SRC="sobaka.png" ALIGN="Center">
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">Если переменной величине не присвоено никакого значения (или не введено), то она является неопределенной. Иначе говоря, ничего нельзя сказать о том, какое значение имеет эта переменная.</font>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4"><b>Команда вывода</b></font>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<IMG SRC="sobaka2.PNG" ALIGN="Center">
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<IMG SRC="sobaka2.png" ALIGN="Center">
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4"><b>Команда вывода</b></font><FONT SIZE="4"> в алгоритмах записывается так:</font>
 <p><p align="Center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">вывод <список вывода></font></p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">Например:</font>
@@ -93,7 +93,7 @@
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">5. Что такое ввод? Как записывается команда ввода?</font>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">6. Что такое вывод? Как записывается команда вывода?</font>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">7. В схематическом виде (как это сделано в параграфе) отразите изменения значений в ячейках, соответствующих переменным А и В, в ходе последовательного выполнения команд присваивания:</font>
-<p align="Center"><IMG SRC="vor.PNG" ALIGN="Center"></P>
+<p align="Center"><IMG SRC="vor.png" ALIGN="Center"></P>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">8. Вместо многоточия впишите в алгоритм несколько команд присваивания, в результате чего должен получиться алгоритм возведения в четвертую степень введенного числа (дополнительные переменные не использовать):</font>
 <p align="Center"><FONT SIZE="4">ввод A . . . вывод A</font>
 <h1>JavaScript Quiz</h1>
