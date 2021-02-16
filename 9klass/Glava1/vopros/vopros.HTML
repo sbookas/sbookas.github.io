@@ -1,0 +1,277 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+  <BODY BACKGROUND="FON.PNG"> <meta charset="UTF-8" />
+  <title>Simple Multiple Choice Quiz with JavaScript</title>
+  
+  
+ 
+</head>
+
+<body>
+
+<h1>Вопросы</h1>
+
+<section class="main">
+
+<form name="quiz" action="javascript:check();" class="quizform">
+
+<div class="quizsection">
+
+
+	<h2>1.Что такое асу?</h2>
+	
+	<div class="answer">
+		<input name="q1" value="value1" id="value1" type="radio" /> способ определения объекта
+	</div>
+
+	<div class="answer">
+		<input name="q1" value="value2" id="value2" type="radio" /> комплекс аппаратных и программных средств
+	</div>
+
+	<div class="answer">
+		<input name="q1" value="value1" id="value3" type="radio" /> Режим, при котором управляющая система работает синхронно с объектом
+	</div>
+
+	<div class="answer">
+		<input name="q1" value="value1" id="value4" type="radio" /> Служат для обеспечения желаемого качества процесса
+	</div>
+
+
+</div>
+
+<div class="quizsection">
+
+	<h2>2.Что такое Сау?</h2>
+
+	<div class="answer">
+		<input name="q2" value="value1" id="value1" type="radio" /> устройство для преобразования цифрового Кода в аналоговый сигнал
+	</div>
+
+	<div class="answer">
+		<input name="q2" value="value1" id="value2" type="radio" /> применяется для превращения аналогового сигнала
+	</div>
+
+	<div class="answer">
+		<input name="q2" value="value2" id="value3" type="radio" /> комплекс устройств, предназначенного для автоматического изменения
+	</div>
+
+	<div class="answer">
+		<input name="q2" value="value1" id="value4" type="radio" /> С участием человека в контуре управления
+	</div>
+
+
+</div>
+
+<div class="quizsection">
+
+	<h2>3.Что такое Цап?</h2>
+
+	<div class="answer">
+		<input name="q3" value="value1" id="value1" type="radio" checked="checked" /> предназначенный для управления различными процессами
+	</div>
+
+	<div class="answer">
+		<input name="q3" value="value1" id="value2" type="radio" /> устройство или набор устройств для манипулирования поведением других устройств
+	</div>
+
+	<div class="answer">
+		<input name="q3" value="value2" id="value3" type="radio" /> устройство для преобразования цифрового (обычно двоичного) кода в аналоговый сигнал
+	</div>
+
+	<div class="answer">
+		<input name="q3" value="value1" id="value4" type="radio" /> процесс преобразования входной физической величины
+	</div>
+
+</div>
+
+<div class="quizsection">
+
+	<h2>4.Что такое Ацп?</h2>
+
+	<div class="answer">
+		<input name="q4" value="value1" id="value1" type="radio" checked="checked" /> в качестве выходного параметра ЦАП рассматривается напряжение.
+	</div>
+
+	<div class="answer">
+		<input name="q4" value="value1" id="value2" type="radio" /> При построении АЦП наиболее часто используется принцип суммирования токов
+	</div>
+
+	<div class="answer">
+		<input name="q4" value="value2" id="value3" type="radio" />  устройство, преобразующее входной аналоговый сигнал в дискретный код
+
+	<div class="answer">
+		<input name="q4" value="value1" id="value4" type="radio" /> процесс преобразования входной физической величины
+	</div>
+</div>
+<div class="quizsection">
+
+	<h2>5.Что такое рекурсивная процедура?</h2>
+
+	<div class="answer">
+		<input name="q5" value="value2" id="value1" type="radio" checked="checked" />  процедура, которая в процессе работы вызывает саму себя. 
+	</div>
+
+	<div class="answer">
+		<input name="q5" value="value1" id="value2" type="radio" /> При построении АЦП наиболее часто используется принцип суммирования токов
+	</div>
+
+	<div class="answer">
+		<input name="q5" value="value1" id="value3" type="radio" />  помогают человеку в сборе информации и принятии управляющих решений.
+	</div>
+
+	<div class="answer">
+		<input name="q5" value="value1" id="value4" type="radio" /> процесс преобразования входной физической величины
+	</div>
+</div>
+<div class="quizsection">
+
+	<h2>6.Что такое управление в режими реального времени?</h2>
+
+	<div class="answer">
+		<input name="q6" value="value2" id="value1" type="radio" checked="checked" />  процедура, которая в процессе работы вызывает саму себя. 
+	</div>
+
+	<div class="answer">
+		<input name="q6" value="value1" id="value2" type="radio" /> Режим, при котором управляющая система работает синхронно с объектом 
+	</div>
+
+	<div class="answer">
+		<input name="q6" value="value1" id="value3" type="radio" />  помогают человеку в сборе информации и принятии управляющих решений.
+	</div>
+
+	<div class="answer">
+		<input name="q6" value="value1" id="value4" type="radio" /> процесс преобразования входной физической величины
+	</div>
+</div>
+<div class="quizsection">
+
+	<h2>7.Для чего нужны Цап и Ацп?</h2>
+
+	<div class="answer">
+		<input name="q7" value="value2" id="value1" type="radio" checked="checked" />  процедура, которая в процессе работы вызывает саму себя. 
+	</div>
+
+	<div class="answer">
+		<input name="q7" value="value1" id="value2" type="radio" />для аналого-цифрового и цифро-аналоговых преобразований
+	</div>
+
+	<div class="answer">
+		<input name="q7" value="value1" id="value3" type="radio" />  помогают человеку в сборе информации и принятии управляющих решений.
+	</div>
+
+	<div class="answer">
+		<input name="q7" value="value1" id="value4" type="radio" /> процесс преобразования входной физической величины
+	</div>
+</div>
+<div class="quizsection">
+
+	<h2>8.Что входит в управление техническими устройствами?</h2>
+
+	<div class="answer">
+		<input name="q8" value="value1" id="value1" type="radio" checked="checked" />  процедура, которая в процессе работы вызывает саму себя. 
+	</div>
+
+	<div class="answer">
+		<input name="q8" value="value1" id="value2" type="radio" />для аналого-цифрового и цифро-аналоговых преобразований
+	</div>
+
+	<div class="answer">
+		<input name="q8" value="value2" id="value3" type="radio" />  системный блок (в котором, в свою очередь, расположены: процессор, материнская плата.
+	</div>
+
+	<div class="answer">
+		<input name="q8" value="value1" id="value4" type="radio" /> процесс преобразования входной физической величины
+	</div>
+
+<input value="Проверить" type="submit" /> <input value="Сбросить ответы" type="reset" />
+
+</form>
+
+</section>
+
+<script type="text/javascript">// <![CDATA[
+
+   var result;
+   
+   function check()
+
+   {
+
+      var question;
+      var value1;
+      var value2;
+      
+      
+      question = 1;
+      value1 = 0;
+      value2 = 0;
+      
+      
+      result = "";
+
+      var choice;
+      
+      for (question = 1; question <= 8; question++) {
+      
+         var q = document.forms['quiz'].elements['q'+question];
+
+            for (var i = 0; i < q.length; i++) {
+               if (q[i].checked) {
+                  choice = q[i].value;
+               }
+            }
+
+            if (choice == "value1") {
+               value1++;
+            }
+
+            if (choice == "value2") {
+               value2++;
+            }
+
+
+         }
+
+      if (value2 == 0) {
+
+         // Нет правильных ответов
+         result = "ocenka2";
+
+      }
+
+      else if (value2 == 3) {
+
+         // Один правильный ответ
+         result = "ocenka3";
+
+      }
+
+      else if (value2 == 5) {
+
+         // Два правильных ответа
+         result = "ocenka4";
+
+      }
+
+      else if (value2 == 7) {
+
+         // Три правильных ответа
+         result = "ocenka5";
+
+      }
+
+
+      else {
+         result = "ocenka2";
+      }
+
+      window.location = result + '.html';
+
+   }
+
+// ]]></script>
+
+</body>
+</html>
