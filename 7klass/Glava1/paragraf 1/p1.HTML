@@ -1,0 +1,48 @@
+﻿<head>
+  <title>Человек и информация</title>  
+  <meta name="keywords" content="HTML, человек, информация">  
+  <meta name="description" content="Сайт об HTML и CSS">
+  <meta name="author" content="Maxim White">
+  <meta name="robots" content="noindex, nofollow">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+ </head>
+
+
+<p>Выполните задания теста:</p>
+  <p>Информацию, существенную и важную в настоящий момент, называют(в И.п.): <input type="text" id="z_1"></p>
+  <p>Верно ли утверждение, что знания, которые человек получает из различных источников, называются информация? <input type="text" id="z_2"></p>
+  <p>Может ли одно и то же сообщение для одних людей быть информативно, а для других — нет?  <input type="text" id="z_3"></p>
+  <p>Зависит ли от знаний человека информативность сообщения? <input type="text" id="z_4"></p>
+  <button onClick="proverit();">Проверить</button>
+  <div id="rezultat"></div>
+  <script>
+  function proverit(){
+  pr_otv_zadachi_1 = актуальной;
+  pr_otv_zadachi_2 = да;
+  pr_otv_zadachi_3 = да;
+  pr_otv_zadachi_4 = да;
+  otv_uch_1 = document.getElementById('z_1').value;
+  otv_uch_2 = document.getElementById('z_2').value;
+  otv_uch_3 = document.getElementById('z_3').value;
+  otv_uch_3 = document.getElementById('z_4').value;
+  ball = 0;
+  if(otv_uch_1 == pr_otv_zadachi_1){
+  ball +=1;
+  }
+  if(otv_uch_2 == pr_otv_zadachi_2){
+  ball +=1;
+  }
+  if(otv_uch_3 == pr_otv_zadachi_3){
+  ball +=1;
+  }
+  if(otv_uch_4 == pr_otv_zadachi_3){
+  ball +=1;
+  }
+  vsego_zadach = 4;
+  procent_vip = ball/vsego_zadach * 100;
+  document.getElementById('rezultat').innerHTML = "Задания выполнены верно на "+procent_vip+"%.";
+  }
+  </script>
+
+
+

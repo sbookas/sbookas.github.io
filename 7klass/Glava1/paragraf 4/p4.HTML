@@ -1,0 +1,44 @@
+﻿<head>
+  <title>Человек и информация</title>  
+  <meta name="keywords" content="HTML, человек, информация">  
+  <meta name="description" content="Сайт об HTML и CSS">
+  <meta name="author" content="Maxim White">
+  <meta name="robots" content="noindex, nofollow">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+ </head>
+
+<p>Выполните задания теста:</p>
+  <p>Информационный вес одной буквы русского алфавита, состоящего из 32 букв, равен (в битах) <input type="text" id="z_1"></p>
+  <p>Информационный объем сообщения из 80 символов русского алфавита равен (в битах) <input type="text" id="z_2"></p>
+  <p>Количество символов в алфавите языка, из которого составлено сообщение объемом 2 Кб, состоящее из 1024 символов (степень числа 2) <input type="text" id="z_3"></p>
+  <p>Двоичным кодированием называется представление информации с помощью ___________ алфавита <input type="text" id="z_4"></p>
+  <button onClick="proverit();">Проверить</button>
+  <div id="rezultat"></div>
+  <script>
+  function proverit(){
+  pr_otv_zadachi_1 = 5;
+  pr_otv_zadachi_2 = 400;
+  pr_otv_zadachi_3 = 16;
+  pr_otv_zadachi_4 = двоичного;
+  otv_uch_1 = document.getElementById('z_1').value;
+  otv_uch_2 = document.getElementById('z_2').value;
+  otv_uch_3 = document.getElementById('z_3').value;
+  otv_uch_4 = document.getElementById('z_4').value;
+  ball = 0;
+  if(otv_uch_1 == pr_otv_zadachi_1){
+  ball +=1;
+  }
+  if(otv_uch_2 == pr_otv_zadachi_2){
+  ball +=1;
+  }
+  if(otv_uch_3 == pr_otv_zadachi_3){
+  ball +=1;
+  }
+  if(otv_uch_4 == pr_otv_zadachi_3){
+  ball +=1;
+  }
+  vsego_zadach = 4;
+  procent_vip = ball/vsego_zadach * 100;
+  document.getElementById('rezultat').innerHTML = "Задания выполнены верно на "+procent_vip+"%.";
+  }
+  </script>
