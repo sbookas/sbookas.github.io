@@ -1,0 +1,256 @@
+﻿<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<FONT COLOR="#1faee9" SIZE="6">§9</FONT><BR>
+</HEAD>
+<BODY>
+<FONT COLOR="#1faee9" SIZE="6">Алгоритм работы с величинами</FONT>
+<p><FONT SIZE="4"><I>Основные темы параграфа:</I></FONT><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4"><I><A HREF="#компьютер как"> компьютер как исполнитель алгоритмов;</A></I></FONT><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4"><I><A HREF="#величины"> величины: константы и переменные;</I></FONT><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4"><I><A HREF="#система команд"> система команд;</a></I></FONT><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4"><I><A HREF="#команда присвоения"> команда присвоения;</a></I></FONT><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4"><I><A HREF="#команда ввода"> команда ввода;</a></I></FONT><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4"><I><A HREF="#команда вывода"> команда вывода.</I></FONT><BR>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<B><FONT SIZE="4"><A NAME="компьютер как">Компьютер как исполнитель алгоритмов</a></FONT></B>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">Вам уже известно, что всякии алгоритм составляется для конкретного исполнителя.</FONT> <FONT SIZE="4"><I>Теперь в качестве исполнителя мы будем рассматривать компьютер, оснащенный системой программирования на определенном языке.</I></FONT>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">Компьютер-исполнитель работает с определенными </font><FONT SIZE="4"><b>данными</b></font><FONT SIZE="4"> по определенной программе. Данные — это множество величин.</font>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4"><b><A NAME="величины">Величины: константы и переменные</b></font>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">Компьютер работает с информацией, хранящейся в его памяти. Отдельный информационный объект (число, символ, строка, таблица и пр.) называется величиной.</font>
+<IMG SRC="sobaka3.png" ALIGN="LEFT"><BR><BR><BR><BR><br><br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">Существуют</font><FONT SIZE="4"><i> три основных типа величин</i></font><FONT SIZE="4">, с которыми работает компьютер:</font><FONT SIZE="4"><b> числовой,</b></font><FONT SIZE="4"><b> символьный</b></font> и<FONT SIZE="4"><b> логический.</b></font><FONT SIZE="4"> Изучая базы данных и электронные таблицы, вы уже встречались с этими типами. В данной главе мы будем строить алгоритмы, работающие с числовыми величинами.</font>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">Числовые величины в программировании, так же как и математические величины, делятся на переменные и константы(постоянные). Например, в формуле (а² — 2ab + 5²) а, 6 — переменные, 2 — константа.</font>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4"><b>Константы</b></font><FONT SIZE="4"> записываются в алгоритмах своими десятичными значениями, например: 23, 3.5, 34. Значение константы хранится ввыделенной под нее ячейке памяти и остается неизменным втечение работы программы.</font>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4"><b>Переменные</b></font><FONT SIZE="4"> в программировании, как и в математике, обозначаются символическими именами. Эти имена называют</font><FONT SIZE="4"><b> идентификаторами</b></font><FONT SIZE="4"> (от глагола «идентифицировать», что значит «обозначать», «символизировать»). Идентификатор может быть одной буквой, множеством букв, сочетанием букв и цифр ит. д. Примеры идентификаторов: А, Х, В3, prim, r25 и т. п.</font>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4"><b><A NAME="система команд">Система команд</a></b></font>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">Вам известно, что всякий алгоритм строится исходя из системы команд исполнителя, для которого он предназначен. Любой алгоритм работы с величинами может быть составлен из следующих команд:</font>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<FONT SIZE="4">присваивание;</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<FONT SIZE="4">ввод;</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<FONT SIZE="4">вывод;</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<FONT SIZE="4">обращение к вспомогательному алгоритму;</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<FONT SIZE="4">цикл;</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<FONT SIZE="4">ветвления.</font><br>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">Эти команды существуют во всех языках, поддерживающих структурное программирование: в Паскале, Си и др.</font>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4"><b><A NAME="команда присвоения">Команда присваивания</a></b></font>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">Команда присваивания — одна из основных команд в алгоритмах
+работы с величинами. Записывать ее мы будем так:</font>
+<p><P align="Center"><FONT SIZE="4"><переменная>:=<выражения>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4"> Значок «:=» читается «присвоить». Например:</font>
+<p><p align="Center"><FONT SIZE="4">Z:=X+Y</font>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">Компьютер сначала вычисляет выражение, затем результат присваивает переменной, стоящей слева от знака «:=».
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">Если до выполнения этой команды содержимое ячеек, соответствующих переменным X, Y, Z, было таким:</font>
+<p align="Center"><IMG SRC="xy.png" ALIGN="Center"></P>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">то после выполнения команды оно станет следующим:</font>
+<p align="Center"><IMG SRC="yx.png" ALIGN="Center"></P>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">Прочерк в ячейке 2 обозначает, что начальное число в ней может быть любым. Оно не имеет значения для результата данной команды. Если слева от знака присваивания стоит числовая переменная, а справа — выражение, определяющее порядок вычисления числовой величины, то такую команду называют</font><FONT SIZE="4"><b> арифметической командой присваивания,</b></font><FONT SIZE="4"> а выражение —</font><FONT SIZE="4"><b> арифметическим выражением.</b></font>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">В частном случае арифметическое выражение в правой части оператора присваивания может быть представлено одной переменной или одной константой. Например:</font>
+<p align="Center"><FONT SIZE="4">X:=5</font><br>
+<FONT SIZE="4">Y:=X</font></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4"><b><A NAME="команда ввода">Команда ввода</a></b></font>
+<p><IMG SRC="infa.png" ALIGN="Center">
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<p align="Center"><FONT SIZE="4"><b>Команда ввода</b></font> <FONT SIZE="4">в описаниях алгоритмов выглядит так:</font><br>
+<FONT SIZE="4">ввод <список переменных>.</font></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">Например:</font><br>
+<p align="Center"><FONT SIZE="4">ввод A, B, C
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">Пользователю удобно, если ввод данных организован в режиме диалога, когда по команде ввода компьютер прерывает выполнение программы и ждет действий пользователя. Пользователь должен набрать на клавиатуре вводимые значения переменных и нажать клавишу <ВВОД>. Введенные значения присвоятся соответствующим переменным из списка ввода, и выполнение программы продолжится.</font>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">Вот схема выполнения приведенной выше команды.</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">1. Память до выполнения команды:</font>
+<p align="Center"><IMG SRC="abc.png" ALIGN="Center"></P>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">2. Процессор компьютера получил команду</font><FONT SIZE="4"><i> ввод</i> А, В, С, прервал свою работу и ждет действий пользователя.</font>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">3. Пользователь набирает на клавиатуре:1 3 5</font>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">и нажимает клавишу <ВВОД>(«Enter»).</font>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">4. Память после выполнения команды:</font>
+<p align="Center"><IMG SRC="abc2.png" ALIGN="Center"></P>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">5. Процессор переходит к выполнению следующей команды программы.</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">При выполнении пункта 3 вводимые числа должны быть отделены друг от друга какими-нибудь разделителями. Обычно это пробелы.</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">Из сказанного выше можно сделать вывод:</font>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<IMG SRC="sobaka.png" ALIGN="Center">
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">Если переменной величине не присвоено никакого значения (или не введено), то она является неопределенной. Иначе говоря, ничего нельзя сказать о том, какое значение имеет эта переменная.</font>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4"><b><A NAME="команда вывода">Команда вывода</a></b></font>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<IMG SRC="sobaka2.png" ALIGN="Center">
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4"><b>Команда вывода</b></font><FONT SIZE="4"> в алгоритмах записывается так:</font>
+<p><p align="Center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">вывод <список вывода></font></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">Например:</font>
+<p><p align="Center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">вывод X1, X2</font></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">По этой команде значения переменных Х1 и Х2 будут вынесены на устройство вывода (чаще всего это экран).</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">О других командах, применяемых в алгоритмах работы с величинами, вы узнаете позже.</font>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4"><b><u>Коротко о главном</u></b></font>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">Любой алгоритм работы с величинами может быть составлен из следующих команд: присваивание; ввод; вывод; обращение к вспомогательному алгоритму; цикл; ветвление.</font>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">Программа для компьютера — это алгоритм, записанный на языке программирования.</font>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">Язык программирования — это фиксированная система обозначений для описания алгоритмов и структур данных.</font>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">Всякая обрабатываемая программой величина занимает определенное поле в памяти компьютера. Значение величины — это информация, хранимая в этом поле.</font>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">Переменная величина получает значение в результате выполнения команды присваивания или команды ввода.</font>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">Формат команды присваивания:</font>
+<p align="Center"><FONT SIZE="4"><переменная>:=<выражение></font></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">Сначала вычисляется выражение, затем полученное значение присваивается переменной.</font>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">Ввод — это занесение данных с внешних устройств в оперативную память компьютера. Исходные данные для решения задачи обычно задаются вводом.</font>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">Результаты решения задачи выносятся на устройства вывода (монитор, принтер) по команде вывода.</font>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4"><b><u>Вопросы и задания</u></b></font>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">1. Что такое величина? Чем отличаются переменные и постоянные величины?</font>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">2. Чем определяется значение величины?</font>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">3. Какие существуют основные типы величин в программировании?</font>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">4. Как записывается команда присваивания?</font>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">5. Что такое ввод? Как записывается команда ввода?</font>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">6. Что такое вывод? Как записывается команда вывода?</font>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">7. В схематическом виде (как это сделано в параграфе) отразите изменения значений в ячейках, соответствующих переменным А и В, в ходе последовательного выполнения команд присваивания:</font>
+<p align="Center"><IMG SRC="vor.png" ALIGN="Center"></P>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<FONT SIZE="4">8. Вместо многоточия впишите в алгоритм несколько команд присваивания, в результате чего должен получиться алгоритм возведения в четвертую степень введенного числа (дополнительные переменные не использовать):</font>
+<p align="Center"><FONT SIZE="4">ввод A . . . вывод A</font>
+<h1>JavaScript Quiz</h1>
+
+<section class="main">
+
+<form name="quiz" action="javascript:check();" class="quizform">
+
+<div class="quizsection">
+
+
+	<h2>Вопрос #1</h2> Что такое величина? Чем отличаются переменные и постоянные величины?
+	
+	<div class="answer">
+		<input name="q1" value="value2" id="value1" type="radio" checked="checked" /> Отдельный информационный объект (число, символ, строка, таблица и пр.) называется величиной.Константы записываются в алгоритмах своими десятичными значениями,а переменные в программировании, как и в математике, обозначаются символическими именами.
+	</div>
+
+	<div class="answer">
+		<input name="q1" value="value1" id="value2" type="radio" /> Отдельный информационный объект (число, символ, строка, таблица и пр.) называется величиной. Переменныезаписываются в алгоритмах своими десятичными значениями,а константы обозначаются символическими именами.
+	</div>
+
+	<div class="answer">
+		<input name="q1" value="value1" id="value3" type="radio" />   Числовые величины в программировании, так же как и математические величины, делятся на переменные и константы(постоянные).
+	</div>
+
+	<div class="answer">
+		<input name="q1" value="value1" id="value4" type="radio" /> Отдельный информационный объект (число, символ, строка, таблица и пр.) называется величиной.
+	</div>
+
+
+</div>
+
+<div class="quizsection">
+
+	<h2>Вопрос #2</h2> Чем определяется значение величины?
+
+	<div class="answer">
+		<input name="q2" value="value1" id="value1" type="radio" checked="checked" /> Имена называют идентификаторами
+	</div>
+
+	<div class="answer">
+		<input name="q2" value="value2" id="value2" type="radio" /> Существуют три основных типа величин, с которыми работает компьютер: числовой, символьный и логический.
+	</div>
+
+	<div class="answer">
+		<input name="q2" value="value1" id="value3" type="radio" /> Работает с определенными данными
+	</div>
+
+
+</div>
+
+<div class="quizsection">
+
+	<h2>Вопрос #3</h2> Как записывается команда присваивания?
+
+	<div class="answer">
+		<input name="q3" value="value1" id="value1" type="radio" checked="checked" /> <выражения>:=<переменная> 
+	</div>
+
+	<div class="answer">
+		<input name="q3" value="value1" id="value2" type="radio" /> <переменная>:=<выражения> 
+	</div>
+
+	<div class="answer">
+		<input name="q3" value="value2" id="value3" type="radio" />  переменная <выражения>
+	</div>
+
+	
+
+</div>
+
+<input value="Submit" type="submit" /> <input value="Reset" type="reset" />
+
+</form>
+
+</section>
+
+<script type="text/javascript">// <![CDATA[
+
+   var result;
+   
+   function check()
+
+   {
+
+      var question;
+      var value1;
+      var value2;
+      
+      
+      question = 1;
+      value1 = 0;
+      value2 = 0;
+      
+      
+      result = "";
+
+      var choice;
+      
+      for (question = 1; question <= 3; question++) {
+      
+         var q = document.forms['quiz'].elements['q'+question];
+
+            for (var i = 0; i < q.length; i++) {
+               if (q[i].checked) {
+                  choice = q[i].value;
+               }
+            }
+
+            if (choice == "value1") {
+               value1++;
+            }
+
+            if (choice == "value2") {
+               value2++;
+            }
+
+
+         }
+
+      if (value2 == 0) {
+
+         // Нет правильных ответов
+         result = "ocenka2";
+
+      }
+
+      else if (value2 == 1) {
+
+         // Один правильный ответ
+         result = "ocenka3";
+
+      }
+
+      else if (value2 == 2) {
+
+         // Два правильных ответа
+         result = "ocenka4";
+
+      }
+
+      else if (value2 == 3) {
+
+         // Три правильных ответа
+         result = "ocenka5";
+
+      }
+
+
+      else {
+         result = "404";
+      }
+
+      window.location = result + '.html';
+
+   }
+
+// ]]></script>
+</BODY>
+</HTML>
