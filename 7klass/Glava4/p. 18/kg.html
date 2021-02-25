@@ -61,5 +61,35 @@
 
 </BODY>
 
+ <p>Выполните задания теста:</p>
+  <p> 1) Специальные устройства для графического выводы на бумагу - это <p>1. Графостроители</p> <p>2.Графопостроители</p> <p>3.Графические машины</p>   <input type="text" id="z_1"></p>
+  <p> 2) Получение движущихся изображений  на мониторе компьютера - это <p>1. Компьютерная графика</p> <p>2. Компьютерная анимация</p> <P>3. Графическая анимация</p> <input type="text" id="z_2"></p>
+  <p> 3) За сколько этапов происходит создание изображенийв программах трехмерного моделирования?  <input type="text" id="z_3"></p>
+  <button onClick="proverit();">Проверить</button>
+  <div id="rezultat"></div>
+  <script>
+  function proverit(){
+  pr_otv_zadachi_1 = 2;
+  pr_otv_zadachi_2 = 2;
+  pr_otv_zadachi_3 = 5;
+  otv_uch_1 = document.getElementById('z_1').value;
+  otv_uch_2 = document.getElementById('z_2').value;
+  otv_uch_3 = document.getElementById('z_3').value;
+  ball = 0;
+  if(otv_uch_1 == pr_otv_zadachi_1){
+  ball +=1;
+  }
+  if(otv_uch_2 == pr_otv_zadachi_2){
+  ball +=1;
+  }
+  if(otv_uch_3 == pr_otv_zadachi_3){
+  ball +=1;
+  }
+  vsego_zadach = 3;
+  procent_vip = ball/vsego_zadach * 100;
+  document.getElementById('rezultat').innerHTML = "Задания выполнены верно на "+procent_vip+"%.";
+  }
+  </script>
+ 
 </BODY> 
 </HTML>
