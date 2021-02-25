@@ -1,0 +1,53 @@
+﻿<head>
+  <title>Человек и информация</title>  
+  <meta name="keywords" content="HTML, человек, информация">  
+  <meta name="description" content="Сайт об HTML и CSS">
+  <meta name="author" content="Maxim White">
+  <meta name="robots" content="noindex, nofollow">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+ </head>
+
+<BODY>
+<img src="p2.1.jpg" width=50%>
+<img src="p2.2.jpg" width=50%>
+<img src="p2.3.jpg" width=50%>
+<img src="p2.4.jpg" width=50%>
+<img src="p2.5.jpg" width=50%>
+
+<p>Выполните задания теста:</p>
+  <p>Человек воспринимает информацию из окружающего мира с помощью своих органов чувст - их ... <input type="text" id="z_1"></p>
+  <p>Информация представлена непрерывно в:(1.математическом уравнении 2.записи на формальном языке 3.изображении 4.записи шифра) <input type="text" id="z_2"></p>
+  <p>Звуковой знаковой системой не является:(1.график 2.щебет птиц 3.музыка 4.рычание зверя) <input type="text" id="z_3"></p>
+  <p>Информация представлена дискретно в:(1.математическом выражении 2.музыкальном произведении 3.изображении 4.звучании музыкального инструмента)1<input type="text" id="z_4"></p>
+  <button onClick="proverit();">Проверить</button>
+  <div id="rezultat"></div>
+  <script>
+  function proverit(){
+  pr_otv_zadachi_1 = 5;
+  pr_otv_zadachi_2 = 3;
+  pr_otv_zadachi_3 = 1;
+  pr_otv_zadachi_4 = 1;
+  otv_uch_1 = document.getElementById('z_1').value;
+  otv_uch_2 = document.getElementById('z_2').value;
+  otv_uch_3 = document.getElementById('z_3').value;
+  otv_uch_4 = document.getElementById('z_4').value;
+  ball = 0;
+  if(otv_uch_1 == pr_otv_zadachi_1){
+  ball +=1;
+  }
+  if(otv_uch_2 == pr_otv_zadachi_2){
+  ball +=1;
+  }
+  if(otv_uch_3 == pr_otv_zadachi_3){
+  ball +=1;
+  }
+  if(otv_uch_4 == pr_otv_zadachi_4){
+  ball +=1;
+  }
+  vsego_zadach = 4;
+  procent_vip = ball/vsego_zadach * 100;
+  document.getElementById('rezultat').innerHTML = "Задания выполнены верно на "+procent_vip+"%.";
+  }
+  </script>
+
+</BODY>
