@@ -1,0 +1,70 @@
+ 
+<HTML>
+<head>
+<title> Тест к параграфу 1 </title>
+<meta name="keywords" content="HTML, Meta Tags, Metadata, Семакин, 8 класс, Передача информации, Информатика, Залогова, Русаков,Шестакова,Компьютерная сеть,Электронная почта и другие услуги, Програмное обеспечение, Всемирная паутина, Интернет, Способы поиска в интернете">  
+  <meta name="description" content="Информатика 8 класс глава 1 Передача информации в компьютерных сетях">
+  
+ 
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+</head>
+<BODY P ALIGN = "CENTER" background ="QQQQQ.png"> 
+
+
+ <h1>Тест к параграфу 1</h1>
+  <p>Что такое компьютерная сеть?</p>
+ <p> 1.Программа компьютера </p>
+<p> 2.Это программно - аппаратный комплекс , обеспечивающий автоматизированный обмен данными между компьютерами по каналам связи  </p>
+<p> 3.Небольшое предприятие </p>
+<p> 4.Рабочая станция с компьютерами </p>
+ <input type="text" id="z_1">
+  <p>Что такое локальная сеть? </p>
+<p> 1.Небольшой компьютер с интернетом </p>
+<p> 2.Операционная система компьютера </p>
+<p> 3.Иформационный обмен </p>
+<p> 4.Небольшие сети, работащие в пределах одного помещения </p>
+ <input type="text" id="z_2">
+  <p> Главная функция локальной сети? </p>
+  <p> 1.Cвязывает между собой множество локальных сетей,а так же отдельных компьютеров  </p>
+  <p> 2.Запускает Интернет </p>
+  <p> 3.Отвечает на запросы пользователей в поисковике </p>
+  <p> 4.Обеспечивает сеть памятью </p>
+  <input type="text" id="z_3">
+<p> Как называется всемирная сеть, объеденяющая в себе большенство существующих в мире сетей? </p>
+<p> 1.Региональная сеть </p>
+<p> 2.Локальная сеть </p>
+<p> 3.Глобальная сеть </p>
+<p> 4.Компьютерная сеть </p>
+
+<input type="text" id="z_4">
+
+  <button onClick="proverit();">Проверить</button>
+  <div id="rezultat"></div>
+  <script>
+  function proverit(){
+  pr_otv_zadachi_1 = 2;
+  pr_otv_zadachi_2 = 4;
+  pr_otv_zadachi_3 = 1;
+pr_otv_zadachi_4 = 3;
+  otv_uch_1 = document.getElementById('z_1').value;
+  otv_uch_2 = document.getElementById('z_2').value;
+  otv_uch_3 = document.getElementById('z_3').value;
+ otv_uch_4 = document.getElementById('z_4').value;
+  ball = 0;
+  if(otv_uch_1 == pr_otv_zadachi_1){
+  ball +=1;
+  }
+  if(otv_uch_2 == pr_otv_zadachi_2){
+  ball +=1;
+  }
+  if(otv_uch_3 == pr_otv_zadachi_3){
+  ball +=1;
+  }
+ if(otv_uch_4 == pr_otv_zadachi_4){
+  ball +=1;
+  }
+  vsego_zadach = 4;
+  procent_vip = ball/vsego_zadach * 100;
+  document.getElementById('rezultat').innerHTML = "Задания выполнены верно на "+procent_vip+"%.";
+  }
+  </script>

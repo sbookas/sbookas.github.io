@@ -1,0 +1,69 @@
+<HTML>
+<head>
+<title> Тест к параграфу 4 </title>
+<meta name="keywords" content="HTML, Meta Tags, Metadata, Семакин, 8 класс, Передача информации, Информатика, Залогова, Русаков,Шестакова,Компьютерная сеть,Электронная почта и другие услуги, Програмное обеспечение, Всемирная паутина, Интернет, Способы поиска в интернете">  
+  <meta name="description" content="Информатика 8 класс глава 1 Передача информации в компьютерных сетях">
+  
+ 
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+</head>
+<BODY P ALIGN = "CENTER" background ="NNNNN.png"> 
+
+
+ <h1>Тест к параграфу 4</h1>
+<p>Компьютер, подключенный к Интернету, обязательно имеет:</p>
+<p>1.Web-страницу</p>
+<p>2.IP-адрес </p>
+<p>3.домашнюю Web-страницу</p>
+<p>4.URL-адрес</P>
+<input type="text" id="z_1"></p>
+<p>Гипертекст - это...</p>
+<p>1.обычный, но очень большой по объему текст </p>
+<p>2.способ организации текстовой информации, внутри которой установлены смысловые связи между ее различными фрагментами</p>
+<p>3.распределенная совокупность баз данных, содержащих тексты</p>
+<p>4.текст, буквы которого набраны шрифтом большого размера</p>
+<input type="text" id="z_2"></p>
+<p> Всемирная паутина - это...</p>
+<p>1.множество компьютеров, связанных каналами передачи информации и находящихся в пределах одного помещения, здания</P>
+<p>2.система обмена информацией на определенную тему</p>
+<p>3.сотни миллионов Web-серверов Интернета, содержащих сотни миллиардов Web-страниц, в которых используется технология гипертекста </p>
+<p>4. совокупность локальных сетей и компьютеров, расположенных на больших расстояниях и соединенных с помощью каналов связи в единую систему</p>
+<input type="text" id="z_3"></p>
+<p>Википедия - это ...</p>
+<p>1.сервер для хранения в сети исторической информации</p>
+<p>2.сайт интернет-энциклопедии</p>
+<p>3.файловые архивы для хранения информации в сети Интернет</P>
+<p>4.сайт для игр</p>
+<input type="text" id="z_4"></p>
+
+<button onClick="proverit();">Проверить</button>
+<div id="rezultat"></div>
+<script>
+function proverit(){
+pr_otv_zadachi_1 = 2;
+pr_otv_zadachi_2 = 2;
+pr_otv_zadachi_3 = 3;
+pr_otv_zadachi_4 = 2;
+otv_uch_1 = document.getElementById('z_1').value;
+otv_uch_2 = document.getElementById('z_2').value;
+otv_uch_3 = document.getElementById('z_3').value;
+otv_uch_4 = document.getElementById('z_4').value;
+ball = 0;
+if(otv_uch_1 == pr_otv_zadachi_1){
+ball +=1;
+}
+if(otv_uch_2 == pr_otv_zadachi_2){
+ball +=1;
+}
+if(otv_uch_3 == pr_otv_zadachi_3){
+ball +=1;
+}
+if(otv_uch_4 == pr_otv_zadachi_4){
+ball +=1;
+}
+vsego_zadach = 4;
+procent_vip = ball/vsego_zadach * 100;
+document.getElementById('rezultat').innerHTML = "Задания выполнены верно на "+procent_vip+"%.";
+
+  }
+  </script>

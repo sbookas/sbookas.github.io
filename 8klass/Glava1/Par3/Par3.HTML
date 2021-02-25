@@ -1,0 +1,68 @@
+<HTML>
+<head>
+<title> Параграф 3 </title>
+<meta name="keywords" content="HTML, Meta Tags, Metadata, Семакин, 8 класс, Передача информации, Информатика, Залогова, Русаков,Шестакова,Компьютерная сеть,Электронная почта и другие услуги, Програмное обеспечение, Всемирная паутина, Интернет, Способы поиска в интернете">  
+  <meta name="description" content="Информатика 8 класс глава 1 Передача информации в компьютерных сетях">
+  
+ 
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+</head>
+<BODY P ALIGN = "CENTER" background ="WWWWW.png"> 
+
+<h1>Тест к параграфу 3</h1>
+  <p> Узлы компьютерной сети это - </p>
+ <p> 1.Компьютеры , объединенный в сеть</p>
+<p> 2.Интернет  </p>
+<p> 3.Объедененный сети</p>
+<p> 4.Технческие средства протокола </p>
+ <input type="text" id="z_1">
+  <p> Что относится к проводным каналам? </p>
+<p> 1.Проводные виды электрических кабелей </p>
+<p> 2.Только телефонные связи </p>
+<p> 3.Телефонные линии и различные виды электрических кабелей </p>
+<p> 4.Оптоволоконные линии </p>
+ <input type="text" id="z_2">
+  <p> Какие каналы поддерживают самую высококачественную связь ? </p>
+  <p> 1.Оптические каналы  </p>
+  <p> 2.Проводные каналы </p>
+  <p> 3.Беспроводные каналы </p>
+  <p> 4.Оптоволоконные каналы </p>
+  <input type="text" id="z_3">
+<p> Устройство для того чтобы соеденить компьютер с сетью -  </p>
+<p> 1.Клиент-программа </p>
+<p> 2.Модем </p>
+<p> 3.Протокол </p>
+<p> 4.Сервер </p>
+
+<input type="text" id="z_4">
+
+  <button onClick="proverit();">Проверить</button>
+  <div id="rezultat"></div>
+  <script>
+  function proverit(){
+  pr_otv_zadachi_1 = 1;
+  pr_otv_zadachi_2 = 3;
+  pr_otv_zadachi_3 = 4;
+pr_otv_zadachi_4 = 2;
+  otv_uch_1 = document.getElementById('z_1').value;
+  otv_uch_2 = document.getElementById('z_2').value;
+  otv_uch_3 = document.getElementById('z_3').value;
+ otv_uch_4 = document.getElementById('z_4').value;
+  ball = 0;
+  if(otv_uch_1 == pr_otv_zadachi_1){
+  ball +=1;
+  }
+  if(otv_uch_2 == pr_otv_zadachi_2){
+  ball +=1;
+  }
+  if(otv_uch_3 == pr_otv_zadachi_3){
+  ball +=1;
+  }
+ if(otv_uch_4 == pr_otv_zadachi_4){
+  ball +=1;
+  }
+  vsego_zadach = 4;
+  procent_vip = ball/vsego_zadach * 100;
+  document.getElementById('rezultat').innerHTML = "Задания выполнены верно на "+procent_vip+"%.";
+  }
+  </script>
