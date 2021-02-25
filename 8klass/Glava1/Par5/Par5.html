@@ -1,0 +1,68 @@
+<HTML>
+<head>
+<title> Тест к параграфу 5 </title>
+<meta name="keywords" content="HTML, Meta Tags, Metadata, Семакин, 8 класс, Передача информации, Информатика, Залогова, Русаков,Шестакова,Компьютерная сеть,Электронная почта и другие услуги, Програмное обеспечение, Всемирная паутина, Интернет, Способы поиска в интернете">  
+  <meta name="description" content="Информатика 8 класс глава 1 Передача информации в компьютерных сетях">
+  
+ 
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+</head>
+<BODY P ALIGN = "CENTER" background ="YYYYY.png"> 
+
+
+ <h1>Тест к параграфу 5</h1>
+  <p>Что такое передвижение по гиперссылкам?</p>
+  <p>1.Смена сети</p>
+  <p>2.Передвижение по сайтам</p>
+  <p>3.Можно искать документы, только близкие по смыслу текущему документу</p>
+  <p>4.Метод поиска в интернете</P>
+  <input type="text" id="z_1"></p>
+  <p>Что такое поисковой сервер?</p>
+  <p>1.Сервер содержащий большое количество ссылок на самые различные документы, и все эти ссылки систематизированы в тематические каталоги</p>
+  <p>2.Тематическое общение через Интернет в режиме off line</p>
+  <p>3.Система, создаваемая множеством пользователей компьютерных сетей в режиме дистанционного взаимодействия</p>
+  <p>4.Группа ключевых слов, сформированная по определенным правилам</p>
+  <input type="text" id="z_2"></p>
+  <p> Самый распространенный способ поиска информации в Интернет предполагает использование:</p>
+  <p>1.текстового редактора</P>
+  <p>2.справочных систем</p>
+  <p>3.гиперссылок </p>
+  <p>4.поисковых систем</p>
+<input type="text" id="z_3"></p>
+<p>К поисковым системам относят:</p>
+<p>1.Rambler</p>
+<p>2.Яndex</p>
+<p>3.Google</P>
+<p>4.Mail</p>
+<input type="text" id="z_4"></p>
+
+  <button onClick="proverit();">Проверить</button>
+  <div id="rezultat"></div>
+  <script>
+  function proverit(){
+  pr_otv_zadachi_1 = 3;
+  pr_otv_zadachi_2 = 1;
+  pr_otv_zadachi_3 = 4;
+  pr_otv_zadachi_4 = 1234;
+  otv_uch_1 = document.getElementById('z_1').value;
+  otv_uch_2 = document.getElementById('z_2').value;
+  otv_uch_3 = document.getElementById('z_3').value;
+  otv_uch_4 = document.getElementById('z_4').value;
+  ball = 0;
+  if(otv_uch_1 == pr_otv_zadachi_1){
+  ball +=1;
+  }
+  if(otv_uch_2 == pr_otv_zadachi_2){
+  ball +=1;
+  }
+  if(otv_uch_3 == pr_otv_zadachi_3){
+  ball +=1;
+  }
+   if(otv_uch_4 == pr_otv_zadachi_4){
+  ball +=1;
+  }
+  vsego_zadach = 4;
+  procent_vip = ball/vsego_zadach * 100;
+  document.getElementById('rezultat').innerHTML = "Задания выполнены верно на "+procent_vip+"%.";
+  }
+  </script>
