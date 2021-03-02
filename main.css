@@ -1,4 +1,4 @@
-﻿H1 { 
+H1 { 
     font-size: 200%; 
     font-family: Arial, Helvetica, sans-serif; 
     color: #1faee9; 
@@ -8,3 +8,8 @@ P {
   font-family: 'Times New Roman';
   color: #;
 }
+A {
+  text-decoration: none;
+  font-family:Monotype Corsiva;
+  color: #1fadd7;
+  }
