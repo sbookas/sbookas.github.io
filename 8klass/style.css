@@ -2,12 +2,12 @@
 
  H1 { 
 color: #601986;
-font-size: 80%;
+font-size: 30px;
 Font-family: Caveat;
 }
 P { 
 color: #601986;
-font-size: 80%;
+font-size: 30px;
 Font-family: Caveat;
 }
 
@@ -23,6 +23,6 @@ li span { color:  #404040;
   a:hover {
     color: #e36d51 ;}
   .font { color: #404040;
-font-size: 200%;
+font-size: 30px;
 Font-family: Caveat;
   }
