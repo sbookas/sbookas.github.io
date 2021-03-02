@@ -13,3 +13,6 @@ A {
   font-family:Monotype Corsiva;
   color: #1fadd7;
   }
+ A:visited {
+    color: #aa1212;
+   }
