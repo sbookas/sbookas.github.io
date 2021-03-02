@@ -18,7 +18,8 @@ li span { color:  #404040;
   .stroke {color:#404040;
     text-shadow: #e36d51 0 0 2px;}
   a {text-decoration: none;
-  color: #404040;
+  color: #98FB98;
+   font-size: 35px;
   }
   a:hover {
     color: #e36d51 ;}
