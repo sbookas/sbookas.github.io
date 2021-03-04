@@ -126,40 +126,5 @@ procent_vip = ball/vsego_zadach * 100;
 document.getElementById('rezultat').innerHTML = "Задания выполнены верно на "+procent_vip+"%.";
 }
 </script>
-<p><font color ="#e36d51">4.</font> Определите, каким десятичным числам соответствуют следующие двоичные коды восьмиразрядного представления целых чисел.</p>
-<p>а) 00010101;  <input class = "font" type="text" id="z_7"></p>
-<p>6) 11111110; <input class = "font"type="text" id="z_8"></p>
-<p>в) 00111111;  <input class = "font"type="text" id="z_9"></p>
-<p>г) 10101010. <input class = "font"type="text" id="z_10"></p>
-<button onClick="proverit();">Проверить</button>
-<div id="rezult"></div>
-<script>
-function proverit(){
-pr_otv_zadachi_7 = 21;
-pr_otv_zadachi_8 = 254;
-pr_otv_zadachi_9 = 63;
-pr_otv_zadachi_10 = 170;
-otv_uch_7 = document.getElementById('z_7').value;
-otv_uch_8 = document.getElementById('z_8').value;
-otv_uch_9 = document.getElementById('z_9').value;
-otv_uch_10 = document.getElementById('z_10').value;
-ball = 0;
-if(otv_uch_7 == pr_otv_zadachi_7){
-ball +=1;
-}
-if(otv_uch_8 == pr_otv_zadachi_8){
-ball +=1;
-}
-if(otv_uch_9 == pr_otv_zadachi_9){
-ball +=1;
-}
-if(otv_uch_10 == pr_otv_zadachi_10){
-ball +=1;
-}
-vsego_zadach = 4;
-procent_vip = ball/vsego_zadach * 100;
-document.getElementById('rezult').innerHTML = "Задания выполнены верно на "+procent_vip+"%.";
-}
-</script>
 </body>
 </html>
