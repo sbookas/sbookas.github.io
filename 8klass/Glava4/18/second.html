@@ -61,12 +61,21 @@
                         <p align ="center"> <img src = "/8klass/Glava4/18/13div5.png"> </p>
 <p align = "center"><strong><font color ="#e36d51" size = "8">Вопросы и задания</font></strong></p>
 <p>1. Переведите числа из десятичной системы счисления в двоичную, восьмеричную и шестнадцатеричную системы счисления.</p>
+<p>а) 948;<input type="text" id="z_1"></span></li>
+<p>б) 763;<input type="text" id="z_2"></span></li></p>
+<p>в) 994,125;<input type="text" id="z_3"></span></li></p>
+<p>г) 523,25;<input type="text" id="z_4"></span></li></p>
+<p>д) 203,82.<input type="text" id="z_5"></span></li></p>
+<button onclick="proverit();">Проверить</button>
+<div id="rezultat"></div>
 <script>
-<p>а) 948;<input type="text" id="z_1"></span></li></p>
-<p>б) 763;<input type="text" id="z_2"></span></li></p></p>
-<p>в) 994,125;<input type="text" id="z_3"></span></li></p></p>
-<p>г) 523,25;<input type="text" id="z_4"></span></li></p></p>
-<p>д) 203,82.<input type="text" id="z_5"></span></li></p></p>
+function proverit(){
+pr_otv_zadachi_1 = 00100000;
+pr_otv_zadachi_2 = 11100000;
+pr_otv_zadachi_3 = 01100110;
+pr_otv_zadachi_4 = 10011010;
+pr_otv_zadachi_5 = 01111110;
+pr_otv_zadachi_6 = 10000010;
   otv_uch_1 = document.getElementById('z_1').value;
 otv_uch_2 = document.getElementById('z_2').value;
 otv_uch_3 = document.getElementById('z_3').value;
