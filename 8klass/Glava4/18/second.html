@@ -61,11 +61,38 @@
                         <p align ="center"> <img src = "/8klass/Glava4/18/13div5.png"> </p>
 <p align = "center"><strong><font color ="#e36d51" size = "8">Вопросы и задания</font></strong></p>
 <p>1. Переведите числа из десятичной системы счисления в двоичную, восьмеричную и шестнадцатеричную системы счисления.</p>
-
+<script>
 <p>а) 948;<input type="text" id="z_1"></span></li></p>
 <p>б) 763;<input type="text" id="z_2"></span></li></p></p>
 <p>в) 994,125;<input type="text" id="z_3"></span></li></p></p>
 <p>г) 523,25;<input type="text" id="z_4"></span></li></p></p>
 <p>д) 203,82.<input type="text" id="z_5"></span></li></p></p>
+  otv_uch_1 = document.getElementById('z_1').value;
+otv_uch_2 = document.getElementById('z_2').value;
+otv_uch_3 = document.getElementById('z_3').value;
+otv_uch_4 = document.getElementById('z_4').value;
+otv_uch_5 = document.getElementById('z_5').value;
+ball = 0;
+if(otv_uch_1 == pr_otv_zadachi_1){
+ball +=1;
+}
+if(otv_uch_2 == pr_otv_zadachi_2){
+ball +=1;
+}
+if(otv_uch_3 == pr_otv_zadachi_3){
+ball +=1;
+}
+ball = 0;
+if(otv_uch_4 == pr_otv_zadachi_4){
+ball +=1;
+}
+if(otv_uch_5 == pr_otv_zadachi_5){
+ball +=1;
+}
+vsego_zadach = 5;
+procent_vip = ball/vsego_zadach * 100;
+document.getElementById('rezultat').innerHTML = "Задания выполнены верно на "+procent_vip+"%.";
+}
+</script>
 </body>
 </html>
