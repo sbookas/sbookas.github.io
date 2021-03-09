@@ -144,17 +144,54 @@
 	</div>
 
 	<div class="answer">
-		<input name="q3" value="value1" id="value2" type="radio" /> Формирование и развитие любых потребностей людей.
+		<input name="q3" value="value1" id="value2" type="radio" /> Формирование и развитие любых потребностей людей
 	</div>
 
 	<div class="answer">
-		<input name="q3" value="value2" id="value3" type="radio" /> Информационное обеспечение активного отдыха и досуга людей.
+		<input name="q3" value="value2" id="value3" type="radio" /> Информационное обеспечение активного отдыха и досуга людей
 	</div>
 
 	<div class="answer">
 		<input name="q3" value="value1" id="value4" type="radio" /> улучшенное обеспечение всех видов человеческой деятельности
 	</div>
+	
+<div class="quizsection">
 
+	<h2>Вопрос #4 - что такое процессор?</h2>
+
+	<div class="answer">
+		<input name="q4" value="value1" id="value1" type="radio" /> это устройство, на которого устанавливаются основные компоненты персонального компьютера
+	</div>
+
+	<div class="answer">
+		<input name="q4" value="value1" id="value2" type="radio" /> устройство для охлаждения компьютера
+	</div>
+
+	<div class="answer">
+		<input name="q4" value="value2" id="value3" type="radio" /> электронный блок либо интегральная схема, исполняющая машинные инструкции (код программ), главная часть аппаратного обеспечения компьютера или программируемого логического контроллера. 
+	</div>
+
+		
+		
+<div class="quizsection">
+
+	<h2>Вопрос #5 - кто создал первый компьютер?</h2>
+
+	<div class="answer">
+		<input name="q5" value="value1" id="value1" type="radio" /> Шульга Виталий
+	</div>
+
+	<div class="answer">
+		<input name="q5" value="value1" id="value2" type="radio" /> Степанов Игорь
+	</div>
+
+	<div class="answer">
+		<input name="q5" value="value2" id="value3" type="radio" /> Говард Эйкен
+	</div>
+
+	<div class="answer">
+		<input name="q5" value="value1" id="value4" type="radio" /> Квашенников Владислав
+	</div>
 
 
 </div>
@@ -187,7 +224,7 @@
 
       var choice;
       
-      for (question = 1; question <= 3; question++) {
+      for (question = 1; question <= 5; question++) {
       
          var q = document.forms['quiz'].elements['q'+question];
 
@@ -210,28 +247,40 @@
 
       if (value2 == 0) {
 
-         // Нет правильных ответов
          result = "ocenka2";
 
       }
 
       else if (value2 == 1) {
 
-         // Один правильный ответ
-         result = "ocenka3";
+         result = "ocenka2";
 
       }
 
       else if (value2 == 2) {
 
-         // Два правильных ответа
-         result = "ocenka4";
+   
+         result = "ocenka2";
 
       }
 
       else if (value2 == 3) {
 
-         // Три правильных ответа
+   
+         result = "ocenka3";
+
+      }
+	   
+	        else if (value2 == 4) {
+
+   
+         result = "ocenka4";
+
+      }
+	   
+	        else if (value2 == 5) {
+
+   
          result = "ocenka5";
 
       }
