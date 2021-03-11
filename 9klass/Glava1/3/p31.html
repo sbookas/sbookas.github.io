@@ -234,6 +234,27 @@
 	</div>
 
 </div>
+	
+	<div class="quizsection">
+
+	<h2>Какие слова являются служебными?</h2>
+
+	<div class="answer">
+		<input name="q4" value="value1" id="value3" type="radio" > алг 
+	</div>
+
+	<div class="answer">
+		<input name="q4" value="value1" id="value4" type="radio" > нач, кон
+
+	<div class="answer">
+		<input name="q4" value="value2" id="value5" type="radio" > алг, нач, кон
+	</div>
+
+	<div class="answer">
+		<input name="q4" value="value1" id="value6" type="radio" > не знаю
+	</div>
+
+</div>
 
 
 
@@ -297,20 +318,27 @@
       else if (value2 == 2) {
 
          // Один правильный ответ
-         result = "ocenka3";
+         result = "ocenka2";
 
       }
 
       else if (value2 == 3) {
 
          // Два правильных ответа
-         result = "ocenka4";
+         result = "ocenka3";
 
       }
 
       else if (value2 == 4) {
 
          // Три правильных ответа
+         result = "ocenka4";
+
+      }
+
+	    else if (value2 == 5) {
+
+         // Четыре правильных ответа
          result = "ocenka5";
 
       }
